@@ -1,21 +1,43 @@
 
 
-.parent {
-    display: grid;
-    grid-template-columns: 60px repeat(5, 1fr) 60px;
-    grid-template-rows: 3fr repeat(4, 4fr) 2fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    height: 700px;
-    }
-    
-    .header { grid-area: 1 / 1 / 2 / 8; }
-    .maincontent { grid-area: 2 / 2 / 6 / 7; }
-    .rightside { grid-area: 2 / 1 / 6 / 2; }
-    .leftside { grid-area: 2 / 7 / 6 / 8; }
-    .footer { grid-area: 6 / 1 / 7 / 8; }
-    
-  div:not(.parent) {
-      padding:10px;
-      background-color: dimgray;
-  }
+.container 
+{display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+margin-left: 10px;
+margin-right: 10px;
+padding: 20px;
+padding
+justify-content: space-evenly;
+}
+
+
+.movie1
+{background-color: dimgrey;}
+
+.movie2
+{background-color: dimgrey;}
+
+.movie3
+{background-color: dimgrey;}
+
+.movie4
+{background-color: dimgrey;}
+
+.movie5
+{background-color: dimgrey;}
+
+.movie6
+{background-color: dimgrey;}
+
+.movie7
+{background-color: dimgrey;}
+
+.movie8
+{background-color: dimgrey;}
+
+.movie9
+{background-color: dimgrey;}
+
+.movie10
+{background-color: dimgrey;}
