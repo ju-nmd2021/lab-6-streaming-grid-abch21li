@@ -1,83 +1,35 @@
 
 
+
+
+
 h1 {text-align: center;
       font-family: monospace;
-      font-size: 300%;
+      font-size: 500%;
       color: brown;
       font-weight: bolder;
       background-color: black;}
 
 body {background-color: black;}
 
-.container 
-{display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-margin-left: 10px;
-margin-right: 10px;
-padding: 30px;
-justify-content: left;
-justify-content:space-around;
-text-align: center;
-}
+h5 h6 {color: floralwhite;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:medium;}
 
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.movie1
-{background-color: dimgrey;}
+@movie (max-width: 920px) {
+.movietitle-card
+{padding: 2%;
+flex-grow: 1;
+flex: basis 16%;
+display: flex}
+  }
 
-.movie2
-{background-color: dimgrey;}
+.poster-image img 
+{max-width: 100%;}
 
-.movie3
-{background-color: dimgrey;}
-
-.movie4
-{background-color: dimgrey;}
-
-.movie5
-{background-color: dimgrey;}
-
-.movie6
-{background-color: dimgrey;}
-
-.movie7
-{background-color: dimgrey;}
-
-.movie8
-{background-color: dimgrey;}
-
-.movie9
-{background-color: dimgrey;}
-
-.movie10
-{background-color: dimgrey;}
-
-.movie11
-{background-color: dimgrey;}
-
-.movie12
-{background-color: dimgrey;}
-
-.movie13
-{background-color: dimgrey;}
-
-.movie14
-{background-color: dimgrey;}
-
-.movie15
-{background-color: dimgrey;}
-
-.movie16
-{background-color: dimgrey;}
-
-.movie17
-{background-color: dimgrey;}
-
-.movie18
-{background-color: dimgrey;}
-
-.movie19
-{background-color: dimgrey;}
-
-.movie20
-{background-color: dimgrey;}
+.movie-info {margin-top: auto;}
