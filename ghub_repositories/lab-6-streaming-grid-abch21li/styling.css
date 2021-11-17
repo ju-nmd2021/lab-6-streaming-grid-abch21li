@@ -7,7 +7,7 @@ h1 {
     text-align: center;
     font-family: monospace;
     margin-top: 65px;
-    font-size: 500%;
+    font-size: 600%;
     color: rgb(226, 13, 13);
     font-weight: bolder;
     text-align: center;
@@ -23,52 +23,78 @@ h2 {
 .grid-parent {
     display: grid;
     grid-template-columns: .5fr repeat(5, 1fr) .5fr;
-    grid-template-rows: .2fr .1fr repeat(4, 1fr) .4fr;
+    grid-template-rows: .1fr .1fr repeat(4, 1fr) .4fr;
     grid-column-gap: 5px;
     grid-row-gap: 0px;
     }
     
     .grid-header { grid-area: 1 / 1 / 2 / 8; background-color:black;}
-    .grid-menu { grid-area: 2 / 1 / 3 / 8; background-color: gold;}
+    .grid-menu { grid-area: 2 / 1 / 3 / 8; background-color:black}
     .grid-mainbody { grid-area: 3 / 2 / 7 / 7; }
-    .grid-footer { grid-area: 7 / 1 / 8 / 8; background-color: indianred;}
+    .grid-footer { grid-area: 7 / 1 / 8 / 8; background-color:black}
+
 
 .grid-mainbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
     max-width: 100%;
     max-height: 100%;
-    background-color: grey;
+    background-color:black;}
+
+.grid-menu {
+    padding: .1em;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    column-gap: 20px;
 }
 
-.menu-movies {background-color: olive;}
+.grid-menu .menu-movies {
+    background-color:black;
+    justify-content:left;
+    align-content: center;
+    border-radius: 20px;
+    padding: 2em;
+    margin-left: 33.3%;}
 
-.menu-series {background-color: orange;}
+.grid-menu .menu-series {
+    background-color:black;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 2em;}
 
-.menu-favorites {background-color: orchid;}
+.grid-menu .menu-popular {
+    background-color:black;
+    justify-content: right;
+    align-content: center;
+    border-radius: 20px;
+    margin-right: 33.3%;
+    padding: 2em;}
 
 
 .card {
-    background-color:navy;
+    background-color: black;
     border-radius: 10px;
-    padding: 1.4em;
-    justify-content: space-between;
+    padding: 1.3em;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
     max-width: 20%;
-    max-height: 20%;}
+    max-height: 19.90%;}
 
 .card .movietitle {
     font-size: 15px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
     color: floralwhite;
-    margin-bottom: 10px;
-    margin-top: 0;
     align-items: center;
     justify-content:center;
 }
 
 .card .img {
-    margin-bottom: 0%;
-    ;
+    align-items: center;
+   
 }
