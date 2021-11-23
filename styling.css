@@ -51,7 +51,6 @@ h2 {
 
 .grid-menu .menu-movies {
     background-color:black;
-    justify-content:left;
     align-content: center;
     border-radius: 20px;
     padding: 2em;
@@ -70,7 +69,6 @@ h2 {
     border-radius: 20px;
     margin-right: 33.3%;
     padding: 2em;}
-
 
 .card {
     background-color: black;
@@ -92,3 +90,32 @@ h2 {
 
 .card .img {
     align-items: center;}
+
+
+@media only screen and  (max-width: 766px) {
+    .grid-menu {display: block; padding: 0%;}
+
+@media only screen and  (max-width: 766px) {
+
+    .grid-menu .menu-movies {
+        padding: 0%;
+        justify-content: left;
+        margin-right: 60%;
+        margin-left: 0%;
+    }
+    .grid-menu .menu-series {
+        justify-content: left;
+        padding: 0%;
+        margin-right: 60%;}
+    }
+    .grid-menu .menu-popular{
+        padding:0%;
+        justify-content: left;
+        margin-right: 60%;
+    }
+
+}
+
+
+
+
